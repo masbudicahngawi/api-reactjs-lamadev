@@ -64,28 +64,16 @@ export default function Sticky() {
                 alt="Wonderfull Image"
               />
               <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">{item.nama}</div>
-                {/* <p className="text-gray-700 text-base">
-                  {item.deskripsi == null || item.deskripsi == ""
-                    ? "No Description ..."
-                    : item.deskripsi}
-                </p> */}
+                <div className="font-bold text-xl mb-2">
+                  <Link to="/detail" state={item}>
+                    {item.nama}
+                  </Link>
+                </div>
               </div>
-              {/* <div className="px-6 pt-4 pb-2">
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  #photography
-                </span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  #travel
-                </span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  #winter
-                </span>
-              </div> */}
             </div>
           ))}
         </main>
-        <footer className="py-5 bg-gray-700 text-center text-white">
+        <footer className="py-2 bg-gray-700 text-center text-white">
           Tailwind is Awesome 😎
         </footer>
       </div>

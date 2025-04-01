@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="flex justify-center gap-4 bg-slate-300 p-2 mx-auto flex-wrap bg-[url(/images/mount.jpg)] mt-20">
+      <div className="flex justify-center gap-4 bg-slate-300 p-2 mx-auto flex-wrap bg-[url(/images/mount.jpg)]">
         {books.map((satuan, indeks) => (
           <div
             key={satuan.id}
@@ -73,7 +73,6 @@ export default function Home() {
           </div>
         ))}
         <hr />
-        <Link to="/add">Add</Link>
       </div>
     </>
   );
