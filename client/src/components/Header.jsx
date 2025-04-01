@@ -13,6 +13,8 @@ export default function Header() {
               <Link to="/">Beranda</Link>
               <Link to="/books">Buku-Buku</Link>
               <Link to="/tambah">Add Buku</Link>
+              <Link to="/contoh">Contoh</Link>
+              <Link to="/sticky">Sticky</Link>
               {/* <a href="#" className="bg-blue-600 text-white px-4 py-2 rounded-md">Sign Up</a> */}
             </div>
             {/* <div className="md:hidden flex items-center">
