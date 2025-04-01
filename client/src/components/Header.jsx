@@ -3,14 +3,16 @@ import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <>
-      <header className="bg-white fixed top-0 w-full shadow-md mb-4">
+      <header className="bg-yellow-700 fixed top-0 w-full shadow-md mb-4">
         <nav className="container mx-auto px-6 py-3">
           <div className="flex justify-between items-center">
             <a href="#" className="text-2xl font-bold text-gray-800">
               MySimple API
             </a>
             <div className="hidden md:flex items-center space-x-4">
-              <Link to="/add">Add</Link>
+              <Link to="/">Beranda</Link>
+              <Link to="/books">Buku-Buku</Link>
+              <Link to="/tambah">Add Buku</Link>
               {/* <a href="#" className="bg-blue-600 text-white px-4 py-2 rounded-md">Sign Up</a> */}
             </div>
             {/* <div className="md:hidden flex items-center">
