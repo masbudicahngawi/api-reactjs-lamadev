@@ -16,7 +16,7 @@ export default function Header() {
               {/* <Link to="/contoh">Contoh</Link>
               <Link to="/sticky">Sticky</Link> */}
               <Link to="/gabung">PoI</Link>
-              <Link to="/menu">Menu</Link>
+              <Link to="/menu2">Menu2</Link>
             </div>
           </div>
         </nav>

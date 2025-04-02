@@ -24,7 +24,7 @@ export default function Tengah() {
 
   return (
     <>
-      <div className="sticky top-16 z-50 bg-white py-2">
+      <div className="sticky top-16 z-40 bg-white py-2">
         <h1 className="text-3xl font-bold text-center">
           Daftar Point of Interest
         </h1>

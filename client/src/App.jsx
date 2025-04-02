@@ -8,7 +8,8 @@ import Detail from "./components/Detail";
 import Kepala from "./components/Kepala";
 import Gabung from "./components/Lab/Gabung";
 import Data from "./components/Lab/Data";
-import Menu from "./components/Menu";
+import Menu2 from "./components/Menu2";
+import Isi from "./components/Isi";
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
           <Route path="/detail" element={<Detail />} />
           <Route path="/gabung" element={<Gabung />} />
           <Route path="/data" element={<Data />} />
-          <Route path="/menu" element={<Menu />} />
+          <Route path="/menu2" element={<Menu2 />} />
+          <Route path="/isi" element={<Isi />} />
         </Routes>
       </BrowserRouter>
     </>
