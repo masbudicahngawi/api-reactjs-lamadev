@@ -1,7 +1,7 @@
 export default function Isi() {
   let arr = [];
   function gen() {
-    for (let i = 0; i < 100000; i++) {
+    for (let i = 0; i < 10; i++) {
       arr.push(i);
     }
 

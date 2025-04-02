@@ -16,6 +16,7 @@ export default function Header() {
                 <Link to="/tambah">Add Buku</Link>
                 <Link to="/contoh">Contoh</Link>
                 <Link to="/sticky">Sticky</Link>
+                <Link to="/gabung">Gabung</Link>
               </div>
             </div>
           </nav>

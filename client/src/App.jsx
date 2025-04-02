@@ -6,6 +6,8 @@ import Contoh from "./components/Contoh";
 import Sticky from "./components/Sticky";
 import Detail from "./components/Detail";
 import Kepala from "./components/Kepala";
+import Gabung from "./components/Lab/Gabung";
+import Data from "./components/Lab/Data";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="/contoh" element={<Contoh />} />
           <Route path="/sticky" element={<Sticky />} />
           <Route path="/detail" element={<Detail />} />
+          <Route path="/gabung" element={<Gabung />} />
+          <Route path="/data" element={<Data />} />
         </Routes>
       </BrowserRouter>
     </>

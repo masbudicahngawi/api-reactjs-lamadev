@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Banyak from "./Isi";
 import Books from "./Books";
 
 export default function Kepala() {
