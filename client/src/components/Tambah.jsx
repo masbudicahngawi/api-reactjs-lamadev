@@ -1,9 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
-import "../index.css";
 import { Link } from "react-router-dom";
+import axios from "axios";
 import Header from "./Header";
 
 export default function Tambah() {
@@ -32,7 +31,7 @@ export default function Tambah() {
   };
 
   return (
-    <div className="mt-20">
+    <div>
       <Header />
       <h1>Add a New Book</h1>
       <hr />
