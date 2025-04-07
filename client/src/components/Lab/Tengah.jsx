@@ -30,35 +30,39 @@ export default function Tengah() {
         </h1>
       </div>
       <main className="relative flex flex-row justify-center overflow-y-auto gap-4 bg-slate-300 p-2 mx-auto flex-wrap">
-        {pois.map((item, indeks) => (
-          <div
-            key={indeks}
-            className="max-w-sm rounded overflow-hidden shadow-xl bg-white"
-          >
-            <img
-              className="w-full"
-              src={
-                item.foto == "foto.png"
-                  ? "/images/dieng.jpg"
-                  : "https://gis.masbudinulis.my.id/uploaded_images/" +
-                    item.foto
-              }
-              alt="Wonderfull Image"
-            />
+        {pois.length > 0 ? (
+          pois.map((item, indeks) => (
+            <div
+              key={indeks}
+              className="max-w-sm rounded overflow-hidden shadow-xl bg-white"
+            >
+              <img
+                className="w-full"
+                src={
+                  item.foto == "foto.png"
+                    ? "/images/dieng.jpg"
+                    : "https://gis.masbudinulis.my.id/uploaded_images/" +
+                      item.foto
+                }
+                alt="Wonderfull Image"
+              />
 
-            <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2">
-                <Link to="/data" state={item}>
-                  {item.nama}
-                </Link>
-              </div>
-              {/* <p className="text-gray-700 text-base">
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2">
+                  <Link to="/data" state={item}>
+                    {item.nama}
+                  </Link>
+                </div>
+                {/* <p className="text-gray-700 text-base">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Officiis id quae nihil ea, sunt consequuntur.
               </p> */}
+              </div>
             </div>
-          </div>
-        ))}
+          ))
+        ) : (
+          <h1>Loading...</h1>
+        )}
       </main>
     </>
   );
