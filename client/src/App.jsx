@@ -5,11 +5,11 @@ import Books from "./components/Books";
 import Contoh from "./components/Contoh";
 import Sticky from "./components/Sticky";
 import Detail from "./components/Detail";
-import Kepala from "./components/Kepala";
 import Gabung from "./components/Lab/Gabung";
 import Data from "./components/Lab/Data";
-import Menu2 from "./components/Menu2";
+import Menu2 from "./components/Mymenu";
 import Isi from "./components/Isi";
+import Pencarian from "./components/Pencarian";
 
 function App() {
   return (
@@ -26,6 +26,7 @@ function App() {
           <Route path="/data" element={<Data />} />
           <Route path="/menu2" element={<Menu2 />} />
           <Route path="/isi" element={<Isi />} />
+          <Route path="/cari" element={<Pencarian />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -1,4 +1,4 @@
-import Menu2 from "./Menu2";
+import Menu2 from "./Mymenu";
 
 export default function Isi() {
   let arr = [];

@@ -1,11 +1,12 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import Header from "./Header";
+import Mymenu from "./Mymenu";
 
 export default function Tambah() {
+  const judul = "My Books";
   const [item, setItem] = useState({
     judul: "",
     pengarang: "",
@@ -32,7 +33,7 @@ export default function Tambah() {
 
   return (
     <div>
-      <Header />
+      <Mymenu judul={judul} />
       <h1>Add a New Book</h1>
       <hr />
       <form className="w-full max-w-sm">

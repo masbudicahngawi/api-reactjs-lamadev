@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import Header from "./Header";
 
+import Mymenu from "./Mymenu";
+
 export default function Books() {
+  const judul = "My Books";
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
@@ -22,7 +25,7 @@ export default function Books() {
 
   return (
     <>
-      <Header />
+      <Mymenu judul={judul} />
       <div className="flex flex-row justify-center overflow-y-auto gap-4 bg-slate-300 p-2 mx-auto flex-wrap">
         {books.map((item, indeks) => (
           <article

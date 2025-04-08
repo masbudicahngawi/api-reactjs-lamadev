@@ -1,4 +1,4 @@
-import Menu2 from "../Menu2";
+import Menu2 from "../Mymenu";
 import Atas from "./Atas";
 import Bawah from "./Bawah";
 import Tengah from "./Tengah";

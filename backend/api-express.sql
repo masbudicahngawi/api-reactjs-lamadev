@@ -31,9 +31,9 @@ CREATE TABLE `mybooks` (
   `id` int NOT NULL,
   `judul` varchar(100) NOT NULL,
   `pengarang` varchar(100) NOT NULL,
-  `cover` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL DEFAULT 'cover.jpg',
-  `kategori` enum('bahasa','teknologi','pengembangan','lainnya') CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `cover` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8_general_ci NOT NULL DEFAULT 'cover.jpg',
+  `kategori` enum('bahasa','teknologi','pengembangan','lainnya') CHARACTER SET utf8mb4 COLLATE utf8_general_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `mybooks`
