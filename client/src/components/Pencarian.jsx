@@ -23,8 +23,9 @@ export default function Pencarian() {
         if (searchInput !== "") {
             const filteredData = APIData.filter((item) => {
                 // return Object.values(item).join('').toLowerCase().includes(searchInput.toLowerCase());
-                return Object.values(item.nama).join('').toLowerCase().includes(searchInput.toLowerCase());
-                // return item.nama.includes(searchInput);
+                return Object.values(item.nama).join('').toLowerCase().includes(searchValue.toLowerCase());
+                // console.log(`search input : ${searchValue}`);
+                // return item.nama.includes(searchValue);
             });
             setFilteredResults(filteredData);
             console.log(filteredData);
@@ -51,7 +52,7 @@ export default function Pencarian() {
                         className="w-full"
                         src={
                             item.foto == "foto.png"
-                                ? "/images/khalifa.jpg"
+                                ? "/images/fali.jpg"
                                 : "https://gis.masbudinulis.my.id/uploaded_images/" +
                                 item.foto
                         }

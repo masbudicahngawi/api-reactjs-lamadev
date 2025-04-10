@@ -40,7 +40,7 @@ export default function Tengah() {
                 className="w-full"
                 src={
                   item.foto == "foto.png"
-                    ? "/images/khalifa.jpg"
+                    ? "/images/fali.jpg"
                     : "https://gis.masbudinulis.my.id/uploaded_images/" +
                     item.foto
                 }
